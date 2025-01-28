@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #FFA500;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h3>Book an Appointment</h3>
+     <form action="/pet-bookings/schedule-appointment" method="post">
+    <label for="ownerName">Owner Name:</label><br>
+    <input type="text" id="ownerName" name="ownerName" placeholder="Alice Smith" required><br><br>
+
+    <label for="petName">Pet Name:</label><br>
+    <input type="text" id="petName" name="petName" placeholder="Buddy" required><br><br>
+
+    <label for="appointmentDate">Appointment Date:</label><br>
+    <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+
+    <label for="serviceType">Service Type:</label><br>
+    <input type="text" id="serviceType" name="serviceType" placeholder="Grooming" required><br><br>
+
+    <label for="petBreed">Pet Breed:</label><br>
+    <input type="text" id="petBreed" name="petBreed" placeholder="Golden Retriever" required><br><br>
+
+    <label for="notes">Notes:</label><br>
+    <textarea id="notes" name="notes" placeholder="Add any additional details here..." rows="4"></textarea><br><br>
+
+    <input type="submit" value="Schedule Appointment">
+</form>
+       
+    </div>
+</body>
+
+
+</html>

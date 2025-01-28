@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Details</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #32CD32;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h3>Price Details</h3>
+        <p>Your fare for the pet consultation is:</p>
+        <p><strong th:text="'£' + ${cost}"></strong></p>
+        <a href="/pet-bookings/schedule-appointment">Book Another Consultation</a>
+    </div>
+</body>
+</html>
